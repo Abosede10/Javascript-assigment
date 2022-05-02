@@ -73,8 +73,8 @@ comparedPoints([3,5,1], [1, 4, 3])
 
 */
 
-let positive = 0;
-let negative = -0;
+let positiveNumbers = 0;
+let negativeNumbers = 0;
 let zero = 0;
 
 function ratio(array)
@@ -83,19 +83,19 @@ function ratio(array)
     {
         if(array[i] > 0)
         {
-            positive++;
+            positiveNumbers++;
         }
         if(array[i] < 0)
         {
-            negative++;
+            negativeNumbers++;
         }
         if(array[i] === 0)
         {
             zero++;
         }
     }
-    console.log(parseFloat(positive / array.length))
-    console.log(parseFloat(negative / array.length))
+    console.log(parseFloat(positiveNumbers / array.length))
+    console.log(parseFloat(negativeNumber / array.length))
     console.log(parseFloat(zero / array.length))
 }
 ratio([5,40,-3,4,-23,1, 0])
